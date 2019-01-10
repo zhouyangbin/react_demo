@@ -22,7 +22,8 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "pm2_start": "node bin/www",
-    "pm2": "pm2 start processes.json"
+    "pm2": "pm2 start processes.json",
+    "app": "node  app.js"
   },
   "jest": {
     "collectCoverageFrom": [

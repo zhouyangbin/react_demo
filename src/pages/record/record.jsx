@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { is, fromJS } from 'immutable';
 import { NavLink, Switch, Route, Redirect } from 'react-router-dom';
+import asyncComponent from '@/utils/asyncComponent';
+
 import PublicHeader from '@/components/header/header';
 import RecordList from './components/recordList';
 import RecordList2 from './components/recordList2';

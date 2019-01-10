@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Router from './router/';
+import Router from './router/index';
 import FastClick from 'fastclick';
 import registerServiceWorker from './registerServiceWorker';
 import { AppContainer } from 'react-hot-loader';
@@ -19,10 +19,10 @@ FastClick.attach(document.body);
     document.getElementById('root'),
   );
 
-if (module.hot) {
-  module.hot.accept('./router/', function(){
-    render(Route);
-  })
-}
+// if (module.hot) {
+//   module.hot.accept('./router/', function(){
+//     render(Route);
+//   })
+// }
 
 registerServiceWorker();
